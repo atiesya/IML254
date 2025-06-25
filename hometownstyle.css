@@ -1,0 +1,90 @@
+.hero {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #004d40;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  max-width: 320px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: #00695c;
+}
+
+.card p {
+  color: #444;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.back-link {
+  text-align: center;
+  margin: 30px;
+}
+
+.back-link a {
+  text-decoration: none;
+  background-color: #0288d1;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-link a:hover {
+  background-color: #0277bd;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}

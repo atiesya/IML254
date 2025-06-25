@@ -1,0 +1,129 @@
+.music-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.music-button:hover {
+    background-color: #e73370;
+}
+
+header {
+      background-color: #0d47a1;
+    }
+
+nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 14px 0;
+    }
+
+nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+nav a:hover {
+      color: #ffd180;
+    }
+
+main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 10%;
+      background-color: #fffbea;
+     }
+
+.intro-text {
+      flex: 1;
+      min-width: 280px;
+      margin-right: 40px;
+     }
+
+.intro-text h1 {
+      font-size: 2.5em;
+      color: #1a237e;
+      margin-bottom: 10px;
+     }
+
+ .intro-text p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #424242;
+     }
+
+.profile-pic {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+     }
+
+.profile-pic:hover {
+      transform: scale(1.05);
+     }
+
+.profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+
+ @media (max-width: 768px) {
+      main {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+     }
+
+.intro-text {
+      margin: 0 0 30px 0;
+     }
+
+.profile-pic {
+      margin-bottom: 20px;
+     }
+
+nav {
+      flex-direction: column;
+     }
+
+nav a {
+      margin: 8px 0;
+     }
+    }
+
+.quote p {
+    font-size: 2em;
+    color: #d81b60; /* Pink lawa */
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.quote {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
